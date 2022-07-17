@@ -1,0 +1,29 @@
+version: "3.8"
+
+services:
+  frontend:
+    build:
+      context: frontend
+      dockerfile: deploy/Dockerfile
+    restart: unless-stopped
+    ports:
+      - "8811:80"
+    environment:
+      API_SERVER: backend:8080
+    logging:
+      options:
+        max-file: "1"
+        max-size: "10m"
+  backend:
+    build:
+      context: backend
+      dockerfile: deploy/Dockerfile
+    restart: unless-stopped
+    environment:
+      - MPD_HOST
+      - MPD_PORT
+      - MPD_PASSWORD
+    logging:
+      options:
+        max-file: "1"
+        max-size: "10m"
