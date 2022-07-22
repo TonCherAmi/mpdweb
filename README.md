@@ -95,6 +95,8 @@ The easiest way to try MPDWeb is by running it in Docker:
     docker compose up
     ```
 
+3. Open http://localhost:8811 to see the app.
+
 ## Configuration
 
 The following configuration options are available:
