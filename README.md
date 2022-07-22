@@ -123,7 +123,7 @@ MPDWeb works best in combination with MPD 0.23.5+ and latest Firefox/Chromium.
 
 ## Development
 
-The codebase is split into two separate repositories - one for [the backend](https://github.com/toncherami/mpdweb.backend) and one for [the frontend](https://github.com/toncherami/mpdweb.frontend).
+The codebase is split into two separate repositories - one for the [backend](https://github.com/toncherami/mpdweb.backend) and one for the [frontend](https://github.com/toncherami/mpdweb.frontend).
 
 ## License
 
