@@ -9,7 +9,7 @@ services:
     ports:
       - "8811:80"
     environment:
-      API_SERVER: backend:8080
+      API_SERVER: backend:8123
     logging:
       options:
         max-file: "1"
