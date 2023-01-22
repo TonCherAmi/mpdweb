@@ -1,0 +1,32 @@
+name: CI Build
+
+on:
+  push:
+    paths-ignore:
+      - "**.md"
+      - "COPYING"
+
+jobs:
+  build-darwin:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: recursive
+      - run: make
+      - uses: actions/upload-artifact@v3
+        with:
+          name: mpdweb
+          path: backend/target/release/mpdweb
+
+  build-linux:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: recursive
+      - run: make
+      - uses: actions/upload-artifact@v3
+        with:
+          name: mpdweb
+          path: backend/target/release/mpdweb
