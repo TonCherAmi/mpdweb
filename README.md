@@ -81,7 +81,7 @@ player.
 
 ## Installation
 
-The easiest way to try MPDWeb is by running it in Docker:
+You will need `make`, `yarn`, and `rust 1.65+` in order to build MPDWeb.
 
 1. Clone this repository (make sure the submodules get populated):
 
@@ -89,32 +89,30 @@ The easiest way to try MPDWeb is by running it in Docker:
     git clone --recurse-submodules https://github.com/toncherami/mpdweb
     ```
 
-2. Bring up the services from inside the cloned repository:
+2. Build
 
     ```shell
-    docker compose up
+    make
     ```
 
-3. Open http://localhost:8811 to see the app.
+3. The binary can be found at `backend/target/release/mpdweb`.
 
 ## Configuration
 
-The following configuration options are available:
+To configure MPDWeb create a config file at `$XDG_CONFIG_HOME/mpdweb/config.toml`. `XDG_CONFIG_HOME` defaults to `$HOME/.config` if not set.
 
-| Key            | Default | Function          |
-|----------------|---------|-------------------|
-| `MPD_HOST`     |         | Sets MPD host     |
-| `MPD_PORT`     | `6600`  | Sets MPD port     |
-| `MPD_PASSWORD` |         | Sets MPD password |
+Default configuration:
+```toml
+[mpd]
+host = "localhost"
+port = 6600
 
-They can be set in a file called `.env` (must be created first) placed in the same directory as `docker-compose.yml`.
+[server]
+bind = "127.0.0.1"
+port = 8989
 
-Example configuration:
-
-```env
-MPD_HOST=172.31.0.5
-MPD_PORT=6601
-MPD_PASSWORD=qwerty
+[logging]
+level = "info"
 ```
 
 ## Compatability
