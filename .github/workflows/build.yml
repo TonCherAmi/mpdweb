@@ -16,7 +16,7 @@ jobs:
       - run: make
       - uses: actions/upload-artifact@v3
         with:
-          name: mpdweb
+          name: binary.darwin
           path: backend/target/release/mpdweb
 
   build-linux:
@@ -28,5 +28,5 @@ jobs:
       - run: make
       - uses: actions/upload-artifact@v3
         with:
-          name: mpdweb
+          name: binary.linux
           path: backend/target/release/mpdweb
