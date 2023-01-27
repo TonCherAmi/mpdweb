@@ -17,7 +17,9 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
           name: binary.darwin
-          path: backend/target/release/mpdweb
+          path: |
+            build.log
+            backend/target/release/mpdweb
 
   build-linux:
     runs-on: ubuntu-latest
@@ -29,4 +31,6 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
           name: binary.linux
-          path: backend/target/release/mpdweb
+          path: |
+            build.log
+            backend/target/release/mpdweb
