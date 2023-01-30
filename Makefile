@@ -64,4 +64,7 @@ clean:
 
 	@$(call say_done)
 
-.PHONY: all frontend backend
+install:
+	@cargo install --locked --path ${BACKEND_DIR}
+
+.PHONY: all frontend backend install
