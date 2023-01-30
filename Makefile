@@ -34,7 +34,7 @@ frontend:
 	@$(call say_begin,building,frontend)
 
 	@$(call try_build,yarn --cwd ${FRONTEND_DIR} install)
-	@$(call try_build,yarn --cwd ${FRONTEND_DIR} build --output-path ${FRONTEND_OUT_DIR})
+	@$(call try_build,yarn --cwd ${FRONTEND_DIR} build --output-path ${FRONTEND_OUT_DIR} --no-color)
 
 	@$(call say_done)
 
