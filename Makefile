@@ -6,11 +6,11 @@ BACKEND_DIR := ${PWD}/backend
 BUILD_LOG := ${PWD}/build.log
 
 define say_begin
-@printf '\033[0;32m${1}\033[m ${2}...'
+@printf '\033[0;1;32m${1}\033[m ${2}...'
 endef
 
 define say_done
-@printf '\033[0;32mdone\033[m\n'
+@printf '\033[0;1;32mdone\033[m\n'
 endef
 
 define try_build
@@ -20,7 +20,7 @@ define try_build
 RESULT=$$?; \
 if [ "$$RESULT" -ne 0 ]; then \
   echo "---\nCommand failed with exit code: $$RESULT" >> ${BUILD_LOG}; \
-  printf '\033[0;31mfailed\033[m\n'; \
+  printf '\033[0;1;31mfailed\033[m\n'; \
   echo see ${BUILD_LOG} for details; \
   exit "$$RESULT"; \
 fi
