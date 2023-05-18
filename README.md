@@ -43,7 +43,7 @@ player.
 
 ![image](https://user-images.githubusercontent.com/13941584/179988487-ba594e21-504c-42cb-b9c2-31c7b7d6ba64.png)
 
-![image](https://user-images.githubusercontent.com/13941584/179989522-5c8ded64-d16f-4e21-90ed-4500ed42636b.png)
+![image](https://user-images.githubusercontent.com/13941584/187583493-f06eb125-a3c2-4f8f-a693-de34f1a08efa.png)
 
 ![image](https://user-images.githubusercontent.com/13941584/179988635-2bd73245-ba46-4a96-8b66-01bbc7bcbb7a.png)
 
