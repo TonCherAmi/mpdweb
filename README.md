@@ -59,7 +59,8 @@ player.
 | Last item                                                                     | <kbd>G</kbd> <kbd>End</kbd>   |
 | Add item                                                                      | <kbd>a</kbd>                  |
 | Clear queue and play item                                                     | <kbd>p</kbd>                  |
-| Show item in files view                                                       | <kbd>o</kbd>                  |
+| Show item in files view                                                       | <kbd>gi</kbd>                 |
+| Show current song in files view                                               | <kbd>gI</kbd>                 |
 | Remove item                                                                   | <kbd>x</kbd> <kbd>dd</kbd>    |
 | Search                                                                        | <kbd>/</kbd>                  |
 | Global search                                                                 | <kbd>s</kbd>                  |
