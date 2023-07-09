@@ -75,6 +75,7 @@ player.
 | Volume up                                                                     | <kbd>+</kbd>                  |
 | Volume down                                                                   | <kbd>-</kbd>                  |
 | Update database                                                               | <kbd>U</kbd>                  |
+| Update database at point                                                      | <kbd>u</kbd>                  |
 | Clear queue                                                                   | <kbd>Qc</kbd>                 |
 | Focus queue sidebar                                                           | <kbd>q</kbd>                  |
 | Toggle focused partition between up next/history when queue sidebar has focus | <kbd>h</kbd>                  |
