@@ -119,7 +119,7 @@ level = "info"
 
 ## Compatability
 
-MPDWeb works best in combination with MPD 0.23.5+ and latest Firefox/Chromium. 
+MPDWeb works best in combination with MPD 0.23.13+ and latest Firefox/Chromium.
 
 ## Development
 
